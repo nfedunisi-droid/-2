@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо — Назар Федунишин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ---------- ХЕДЕР ---------- -->
+<header class="header">
+    <div class="logo">Nazar</div>
+
+    <nav class="nav" id="nav">
+        <a href="#about">Про мене</a>
+        <a href="#skills">Навички</a>
+        <a href="#projects">Проєкти</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
+
+    <div class="burger" id="burger">&#9776;</div>
+</header>
+
+
+<!-- ---------- ПРО МЕНЕ ---------- -->
+<section class="about" id="about">
+    <img src="https://i.imgur.com/WxXq2wM.png" alt="avatar" class="avatar">
+
+    <div class="about-text">
+        <h1>Привіт! Я Назар</h1>
+        <p>Я студент спеціальності “Комп'ютерні науки”, займаюсь розробкою <strong>Python-додатків, GUI, Tkinter</strong> та вивчаю
+           веб-розробку. Хочу розвиватися в напрямку програмування та створювати сучасні цифрові продукти.</p>
+    </div>
+</section>
+
+
+<!-- ---------- НАВИЧКИ ---------- -->
+<section class="skills" id="skills">
+    <h2>Навички</h2>
+
+    <div class="skills-grid">
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Tkinter</div>
+        <div class="skill-card">HTML5 / CSS3</div>
+        <div class="skill-card">Git / GitHub</div>
+        <div class="skill-card">SQL</div>
+        <div class="skill-card">Linux</div>
+    </div>
+</section>
+
+
+<!-- ---------- ПРОЄКТИ ---------- -->
+<section class="projects" id="projects">
+    <h2>Мої проєкти</h2>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <img src="https://i.imgur.com/Y7KqFtP.png" alt="">
+            <h3>Система авторизації (Tkinter)</h3>
+            <p>Програма на Python з реєстрацією, входом, роботою з базою даних.</p>
+            <span class="tag">Python</span>
+            <span class="tag">Tkinter</span>
+        </div>
+
+        <div class="project-card">
+            <img src="https://i.imgur.com/NiGXPnB.png" alt="">
+            <h3>Сайт “Геймерські платформи”</h3>
+            <p>HTML/CSS проєкт із адаптивною структурою та кількома сторінками.</p>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+        </div>
+
+        <div class="project-card">
+            <img src="https://i.imgur.com/02a4xgq.png" alt="">
+            <h3>Курсовий проєкт: Кібербезпека</h3>
+            <p>Багатофайлова структура Python-додатка з GUI.</p>
+            <span class="tag">Python</span>
+            <span class="tag">DB</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ---------- КОНТАКТИ ---------- -->
+<section class="contacts" id="contacts">
+    <h2>Контакти</h2>
+
+    <div class="contact-list">
+        <a href="mailto:nfedunisi@gmail.com">📧 Email: nfedunisi@gmail.com</a>
+        <a href="https://github.com/" target="_blank">🐙 GitHub</a>
+        <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
+    </div>
+
+    <form class="contact-form">
+        <h3>Напишіть мені</h3>
+        <input type="text" placeholder="Ваше ім'я" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Повідомлення..." required></textarea>
+        <button type="submit">Надіслати</button>
+    </form>
+</section>
+
+
+<!-- ---------- ФУТЕР ---------- -->
+<footer class="footer">
+    © 2025 • Портфоліо Назар Федунишин
+</footer>
+
+
+<script>
+    // Бургер меню
+    const burger = document.getElementById("burger");
+    const nav = document.getElementById("nav");
+
+    burger.addEventListener("click", () => {
+        nav.classList.toggle("show");
+    });
+</script>
+
+</body>
+</html>
